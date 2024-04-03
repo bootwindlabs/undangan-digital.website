@@ -5,12 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Undangan Digital</title>
     <meta name="description" content="">
+    <meta property="og:title" content="San Roque 2014 Pollos" />
+    <meta property="og:description" content="Programa de fiestas" />
+    <meta property="og:image" content="http://pollosweb.wesped.es/programa_pollos/play.png" />        
 </head>
 <body>
     <script>
         // check url
-        document.querySelector('title').innerHTML = "Undangan Pernikahan Laila dan Ari"
-        document.querySelector('name[description]').setAttribute('content', "Pernikahan akan dilaksanakan tanggal 28 Oktober 2022, jangan lupa dateng ya :)")
+        let title = "Undangan Pernikahan Laila dan Ari"
+        let deskripsi = "Pernikahan akan dilaksanakan tanggal 28 Oktober 2022, jangan lupa dateng ya :)"
+        document.querySelector('title').innerHTML = title
+        document.querySelector('name[description]').setAttribute('content', deskripsi)
+        document.querySelector('property[og:title]').setAttribute('content', title)
+        document.querySelector('property[og:description]').setAttribute('content', deskripsi)
+        // document.querySelector('property[og:image]').setAttribute('content', )
+        
 
     </script>
 </body>
